@@ -1,0 +1,10 @@
+<div style="text-align: center;">
+  <h1 style="text-align: center;" >!!Welcome to Indicosmic.com!!</h1>
+  <h2 class="blinking-text">!!Grouping with ngfor in Anfular 16!!</h2>
+  <ul *ngFor="let Group of CountryDetails" >
+    <li>{{Group.country}}</li>
+    <ul *ngFor="let person of Group.people" >
+      <li>{{person.name}}</li>
+    </ul>
+  </ul>
+</div>
