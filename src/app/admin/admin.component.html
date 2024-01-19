@@ -1,0 +1,40 @@
+<form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+    <table>
+      <tr>
+        <td> <label for="firstName">First Name:</label></td>
+        <td><input type="text" id="firstName" formControlName="firstName"></td>
+      </tr>
+  
+      <tr>
+        <td> <label for="lastName">Last Name:</label></td>
+        <td><input type="text" id="lastName" formControlName="lastName"></td>
+      </tr>
+   
+    
+  
+    <div formGroupName="address">
+      <table>
+       <tr>
+        <td><label for="street">Street:</label></td>
+       <td> <input type="text" id="street" formControlName="street"></td>
+    
+       </tr>
+      <tr>
+       <td> <label for="city">City:</label></td>
+      <td><input type="text" id="city" formControlName="city"></td>
+      </tr>
+  
+      <tr>
+       <td> <label for="zip">ZIP Code:</label></td>
+     <td> <input type="text" id="zip" formControlName="zip"></td>
+      </tr>
+      <tr>
+        <td><button type="submit">Submit</button></td>
+      </tr>
+      </table>
+    </div>
+  
+    
+    </table>
+  </form>
+  
